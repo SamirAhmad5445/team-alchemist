@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slid-page {
+  background-color: #2222;
+}
+.right-section, .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.one .right-section {
+  background-color: cornflowerblue;
+}
+.one .left-section {
+  background-color: royalblue;
+}
+.two .right-section {
+  background-color: tomato;
+}
+.two .left-section {
+  background-color: teal;
+}
+.three .right-section{
+  background-color: violet;
+}
+.three .left-section{
+  background-color: rebeccapurple;
+}
+.four .right-section{
+  background-color: green;
+}
+.four .left-section{
+  background-color: greenyellow;
+}
+.five .right-section{
+  background-color: crimson;
+}
+.five .left-section{
+  background-color: brown;
+}
