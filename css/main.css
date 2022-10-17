@@ -18,6 +18,11 @@
   --clr-gray: #696969;
   --clr-green: #34c4ac;
   --clr-dark-green: #025245;
+  --clr-orange: #fe621d;
+  --clr-bright-orange: #fc301d;
+  --clr-light-orange: #fd8b25;
+  --clr-dark-orange: #2e0a27;
+  --clr-dark-red: #d70916;
 }
 * {
   margin: 0;
@@ -285,6 +290,106 @@ p, i, u {
   }
 }
 /* /////////////////// section there : services /////////////////// */
+.services {
+  background-color: var(--clr-dark-orange);
+  position: relative;
+}
+.services .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.services .header h2 {
+  position: relative;
+  color: var(--clr-orange);
+  padding: 5px 25px;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border: 2px solid var(--clr-orange);
+}
+.services .cards-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+}
+.services .cards-box .card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 15px;
+  padding-top: 15px;
+  border-radius: 15px;
+}
+.services .cards-box .card.one {
+  background-color: var(--clr-green);
+  box-shadow: 0px -5px 15px var(--clr-dark-green);
+}
+.services .cards-box .card.two {
+  background-color: var(--clr-light-orange);
+  box-shadow: 0px -5px 15px var(--clr-orange);
+}
+.services .cards-box .card.three {
+  background-color: var(--clr-blue);
+  box-shadow: 0px -5px 15px var(--clr-blue);
+}
+.services .cards-box .card .img-box {
+  height: 50%;
+  padding: 20px;
+}
+.services .cards-box .card .img-box img {
+  width: 100%;
+}
+.services .cards-box .card .contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.services .cards-box .card .contant h3 {
+  text-transform: uppercase;
+  font-family: var(--fnt-mono);
+  font-size: 1.8em;
+  pointer-events: none;
+}
+.services .cards-box .card .contant p {
+  padding: 10px 15px;
+  pointer-events: none;
+}
+.services .cards-box .card .contant span {
+  position: absolute;
+  bottom: 25px;
+}
+.services .cards-box .card.one h3 {
+  color: var(--clr-dark-blue);
+}
+.services .cards-box .card.one .contant span {
+  --clr-one: var(--clr-dark-green);
+  --clr-two: var(--clr-dark-blue);
+  --clr-three: var(--clr-green);
+}
+.services .cards-box .card.two h3 {
+  color: var(--clr-dark-orange);
+}
+.services .cards-box .card.two .contant span {
+  --clr-one: var(--clr-dark-orange);
+  --clr-two: var(--clr-light-orange);
+  --clr-three: var(--clr-orange);
+}
+.services .cards-box .card.three h3 {
+  color: var(--clr-yellow);
+}
+.services .cards-box .card.three .contant span {
+  --clr-one: var(--clr-yellow);
+  --clr-two: var(--clr-dark-blue);
+  --clr-three: var(--clr-blue);
+}
+/* /////////////////// section four : team /////////////////// */
+
 
 
 /* /////////////////// Animation /////////////////// */
@@ -296,7 +401,6 @@ p, i, u {
     transform: translateY(3px);
   }
 }
-
 
 
 

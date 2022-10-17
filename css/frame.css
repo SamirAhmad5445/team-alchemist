@@ -8,7 +8,7 @@ html {
   overflow-y: scroll;
 }
 .slider .slid-page {
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
   display: flex;
   justify-content: center;
@@ -16,6 +16,9 @@ html {
   padding-right: 15px;
   padding-left: 15px;
   overflow-y: hidden;
+}
+.slider .slid-page.full-height {
+  height: 100vh;
 }
 .slider .slid-page.half-height {
   height: 50%;
@@ -92,7 +95,45 @@ html {
 
 
 
-
+.button {
+  padding: 8px 25px 8px 20px;
+  border-radius: 50px;
+  background-color: var(--clr-one);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button a {
+  color: var(--clr-two);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--fnt-mono);
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;
+}
+.button a::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--clr-two) var(--clr-two) transparent transparent;
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(-50%,-50%) rotateZ(45deg);
+  transition: 0.3s;
+}
+.button:hover {
+  padding-right: 30px;
+}
+.button:hover a {
+  color: var(--clr-three);
+}
+.button:hover a::after {
+  left: calc(100% + 10px);
+  border-color: var(--clr-three) var(--clr-three) transparent transparent;
+}
 
 
 
