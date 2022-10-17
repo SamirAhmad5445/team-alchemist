@@ -4,7 +4,7 @@ html {
 }
 .slider {
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
 }
 .slider .slid-page {
@@ -82,19 +82,11 @@ html {
     width: 585px;
   }
 }
-/* /////////////////// display /////////////////// */
 .flexc {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
-
 .button {
   padding: 8px 25px 8px 20px;
   border-radius: 50px;
