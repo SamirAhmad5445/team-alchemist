@@ -82,7 +82,7 @@ html {
     width: 585px;
   }
 }
-.flexc {
+.display-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,11 +126,3 @@ html {
   left: calc(100% + 10px);
   border-color: var(--clr-three) var(--clr-three) transparent transparent;
 }
-
-
-
-
-
-
-
-
