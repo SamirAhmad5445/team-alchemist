@@ -91,13 +91,13 @@ html {
   padding: 8px 25px 8px 20px;
   border-radius: 50px;
   background-color: var(--clr-one);
+  text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
 }
 .button a {
   color: var(--clr-two);
   text-decoration: none;
-  text-transform: uppercase;
   font-family: var(--fnt-mono);
   font-weight: 700;
   position: relative;
