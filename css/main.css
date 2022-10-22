@@ -13,13 +13,14 @@
   /* the color theme */
   --clr-blue: #5567dd;
   --clr-dark-blue: #02001a;
+  --clr-white-blue: #e8f8fd;
   --clr-yellow: #ffc800;
   --clr-semi-yellow: #ffc800bf;
   --clr-dark-yellow: #ffc505;
-  --clr-white: #f4f4f9;
   --clr-gray: #696969;
   --clr-green: #34c4ac;
   --clr-dark-green: #025245;
+  --clr-white-green: #f0fffc;
   --clr-orange: #fe621d;
   --clr-bright-orange: #fc301d;
   --clr-light-orange: #fd8b25;
@@ -49,7 +50,7 @@ ul li a {
   color: inherit;
   background-color: inherit;
 }
-/* /////////////////// section one : main /////////////////// */
+/* /////////////////// section one : landing /////////////////// */
 .landing {
   background-color: var(--clr-blue);
   position: relative;
@@ -66,7 +67,7 @@ ul li a {
   clip-path: polygon(0 0,0 0 , 100% 0 , 100% 0);
   margin-top: 4px;
   padding: 15px 5px 20px;
-  background-color: var(--clr-dark-yellow);
+  background-color: var(--clr-white-blue);
   border: 2px solid var(--clr-dark-blue);
   border-radius: 0px 0px 15px 15px;
   transition-delay: 0.3s;
@@ -140,7 +141,10 @@ ul li a {
   padding-left: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 3px 3px var(--clr-white), 5px 5px var(--clr-gray), 6px 6px var(--clr-dark-blue);
+  text-shadow: 3px 3px var(--clr-white-blue), 5px 5px var(--clr-gray), 6px 6px var(--clr-dark-blue);
+}
+.landing .right-section h2 {
+  padding-left: 45px;
 }
 .landing .right-section p {
   font-size: 1.2em;
@@ -153,10 +157,9 @@ ul li a {
   opacity: 0.7;
 }
 .landing .right-section > span {
-  --clr-one: var(--clr-yellow);
-  --clr-two: var(--clr-dark-blue);
-  --clr-three: var(--clr-blue);
-  text-transform: capitalize;
+  --clr-one: var(--clr-dark-blue);
+  --clr-two: var(--clr-blue);
+  --clr-three: var(--clr-white-blue);
   margin-top: 15px;
   margin-right: auto;
   margin-left: 45px;
@@ -166,7 +169,8 @@ ul li a {
 }
 .landing .left-section img {
   width: 75%;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-left: 45px;
   animation: up-down 2.5s linear infinite;
 }
 /* /////////////////// section two : who we are? /////////////////// */
@@ -201,48 +205,13 @@ ul li a {
   padding-left: 25px;
   font-weight: 500;
 }
-.about .left-section span {
+.about .left-section > span {
+  --clr-one: var(--clr-dark-blue);
+  --clr-two: var(--clr-green);
+  --clr-three: var(--clr-white-green);
   margin-top: 15px;
   margin-right: auto;
   margin-left: 35px;
-  padding: 8px 25px 8px 20px;
-  border-radius: 50px;
-  background-color: var(--clr-dark-green);
-  
-  transition: 0.3s;
-  cursor: pointer;
-}
-.about .left-section span a {
-  color: var(--clr-dark-blue);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: var(--fnt-mono);
-  font-weight: 700;
-  position: relative;
-  transition: 0.3s;
-}
-.about .left-section span a::after {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--clr-dark-blue) var(--clr-dark-blue) transparent transparent;
-  top: 50%;
-  left: calc(100% + 5px);
-  transform: translate(-50%,-50%) rotateZ(45deg);
-  transition: 0.3s;
-}
-.about .left-section span:hover {
-  padding-right: 30px;
-}
-.about .left-section span:hover a {
-  color: var(--clr-green);
-}
-.about .left-section span:hover a::after {
-  left: calc(100% + 10px);
-  border-color: var(--clr-green) var(--clr-green) transparent transparent;
 }
 @media(max-width: 575px) {
   .about .left-section {
@@ -355,7 +324,20 @@ ul li a {
 }
 /* /////////////////// section four : team /////////////////// */
 .team {
-  background-color: var(--clr-yellow);
+  background-color: var(--clr-white-blue);
+  position: relative;
+}
+.team .right-section {
+  position: relative;
+}
+.team .right-section img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 75%;
+  
+  margin-top: 15px;
 }
 /* /////////////////// Animation /////////////////// */
 @keyframes up-down {

@@ -96,6 +96,9 @@ html {
   cursor: pointer;
 }
 .button a {
+  /* clr-one => background */
+  /* clr-two => text */
+  /* clr-three => hover */
   color: var(--clr-two);
   text-decoration: none;
   font-family: var(--fnt-mono);
@@ -111,6 +114,7 @@ html {
   border-width: 2px;
   border-style: solid;
   border-color: var(--clr-two) var(--clr-two) transparent transparent;
+  border-radius: 3px;
   top: 50%;
   left: calc(100% + 5px);
   transform: translate(-50%,-50%) rotateZ(45deg);
