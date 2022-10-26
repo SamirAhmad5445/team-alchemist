@@ -671,7 +671,7 @@ ul li a {
   height: 100%;
 }
 .contact-us .form .img-box {
-  background-color: var(--clr-green);
+  background-color: var(--clr-bright-blue);
 }
 .contact-us .form .img-box img {
   width: 85%;
@@ -756,6 +756,9 @@ ul li a {
   padding: 2px 5px;
   text-align: center;
   border-radius: 50px;
+}
+.footer div span {
+  margin: 10px 15px;
 }
 .footer div span a {
   text-decoration: none;
