@@ -1,13 +1,13 @@
 /* /////////////////// google fonts links /////////////////// */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 /* ///////////////// variables and global rules /////////////////// */
 :root {
   /* font families  */
   --fnt-sans: 'Poppins', sans-serif; /* main font family*/
-  --fnt-curs: 'Dancing Script', cursive;
+  /* --fnt-curs: 'Lobster Two', cursive; */
   --fnt-mono: 'IBM Plex Mono', monospace;
   --fnt-serif: 'Roboto Serif', serif;
   /* the color theme */
@@ -413,7 +413,7 @@ ul li a {
 }
 .team .colunm .card h3 {
   font-size: 14px;
-  font-family: var(--fnt-curs);
+  /* font-family: var(--fnt-curs); */
   text-transform: capitalize;
   text-align: center;
 }
@@ -552,7 +552,7 @@ ul li a {
   width: 100%;
 }
 .team .colunm .card + .info .right-section h2 {
-  font-family: var(--fnt-curs);
+  /* font-family: var(--fnt-curs); */
   text-transform: capitalize;
   font-size: 2em;
   margin-bottom: 10px;
